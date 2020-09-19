@@ -95,8 +95,7 @@ npm start
    }
    ]
 3. Approver approves a request
-
-````
+```
 for the body request : 
 {
    "approver":name of the approver in camelcase seperated hyphen eg. "Paul-Marsh",
@@ -106,9 +105,6 @@ for the body request :
    "index": index in the approval level of workflow return in above GET request(i.e. getMyApprovalRequest) eg. 0,
    "response": reponse by the user eg. 0 means : user rejects the approval, 1 means user accepts the approval, 2 means user rejects and removs the approval
 }
-```
-
-   ```json
    eg. 
    POST Request : url : localhost:3444/approve
    Body : {
@@ -122,7 +118,8 @@ for the body request :
    Response : {
    "msg": "sucess"
    }
-
+ ```
+ 
 4. Get the Status of the Workflow using the ID of workflow i.e. return in createWorkflow API request
    ```json
    GET Request : url : localhost:3444/5f65bbae411d9230f887fe2d
