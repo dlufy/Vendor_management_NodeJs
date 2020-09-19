@@ -1,15 +1,16 @@
 # Vendor Management System
 this system lets you create an approval worflow for things like onboarding a new vendor or payment to the vendor etc. containing various configurable approval levels. 
-this solution allow users to configure the workflow and save it into Database. For each action taken by an individual user at all levels should be logged into the
+this solution allow users to configure the workflow and save it into Database. For each action taken by an individual user at all levels logged into the
 Database. Finally, we will have a result of approval workflow as Active, Terminated or Executed.
+
 The approval workflow has mainly four components: Users, Approval Actions, Type of Approvals and Approval Levels.
 
 ## Definition of final results:
 Active: Workflow is active and somebody is required to approve at any level
 Terminated: Workflow was terminated as one of the approvers has Rejected the approval
 Executed: All users have approved
-Technologies to be used: Node.js, MongoDB and any other if you prefer
-List of Users who can be the part of approval matrix
+
+## List of Users who can be the part of approval matrix
 1. Elsa Ingram
 2. Paul Marsh
 3. D Joshi
@@ -38,6 +39,8 @@ one, it is required to get the action taken by Elsa Ingram or Nick Holden.
 ## Approval Levels: We can add n number of levels having any type of approvals. Each level can
 be executed accordingly. For example see below how levels and approvers are added and what
 type of action can be taken
+
+## Technologies to be used: POSTMAN, Node.js, MongoDB
 
 ## Getting Started
 ```
