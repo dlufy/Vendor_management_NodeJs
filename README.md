@@ -18,7 +18,7 @@
   ```
 2. Get the request for a specfic Approver(eg.by Paul-Marsh)
    GET Request : url : localhost:3444/getMyApprovalRequest/Paul-Marsh
-   ```
+   ```json
    Response : [
    {
    "_id": "5f65b929fa92e21d8866dff3",
@@ -51,7 +51,7 @@
    }
 ```
 4. Get the Status of the Workflow
-   ```json
+   ```
    GET Request : url : localhost:3444/5f65bbae411d9230f887fe2d
    Response : {
    "_id": "5f65bbae411d9230f887fe2d",
