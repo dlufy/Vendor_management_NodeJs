@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
 router.post("/createWorkFlow", async (req, res) => {
 	if (DBG) console.log(req.body);
 	const response = await insertWorkFlow(req.body);
-	res.send({ msg: "sucess", response: response });
+	res.send({ msg: "sucess", workflowID: response });
 });
 
 router.get("/:id", async (req, res) => {
