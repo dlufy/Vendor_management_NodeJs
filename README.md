@@ -46,7 +46,7 @@ type of action can be taken
 
 ## Getting Started
 ```
- git clone
+git clone
 npm install
 npm start
 ```
@@ -59,8 +59,9 @@ npm start
    {"type":'name of approval technique in lowercase seperated by hyphen eg. "any-one"',"data":[list of approvers in the format of ['name in camelcase seperated by hyphen',-1,""]]},
    ]
    }
-   
-   eg. ```json
+ ```
+ ```
+   eg.
    POST Request : url:localhost:3444/createWorkFlow
    Body : {
    "data":[
@@ -74,7 +75,7 @@ npm start
    "msg": "sucess",
    "workflowID": "5f65bbae411d9230f887fe2d"
    }
- 
+ ```
 2. Get the request for a specfic Approver(eg.by Paul-Marsh)
    ```json
    GET Request : url : localhost:3444/getMyApprovalRequest/Paul-Marsh
@@ -94,7 +95,21 @@ npm start
    }
    ]
 3. Approver approves a request
+
+````
+for the body request : 
+{
+   "approver":name of the approver in camelcase seperated hyphen eg. "Paul-Marsh",
+   "_id": id of the request object return in above GET request(i.e. getMyApprovalRequest) eg. "5f65c10b9716281c2cbfa8b9",
+   "id": id of the worflow object return in above GET request(i.e. getMyApprovalRequest) eg. "5f65bbae411d9230f887fe2d",
+   "lvl":level of approval workflow return in above GET request(i.e. getMyApprovalRequest) eg.  2,
+   "index": index in the approval level of workflow return in above GET request(i.e. getMyApprovalRequest) eg. 0,
+   "response": reponse by the user eg. 0 means : user rejects the approval, 1 means user accepts the approval, 2 means user rejects and removs the approval
+}
+```
+
    ```json
+   eg. 
    POST Request : url : localhost:3444/approve
    Body : {
    "approver":"Paul-Marsh",
@@ -108,7 +123,7 @@ npm start
    "msg": "sucess"
    }
 
-4. Get the Status of the Workflow
+4. Get the Status of the Workflow using the ID of workflow i.e. return in createWorkflow API request
    ```json
    GET Request : url : localhost:3444/5f65bbae411d9230f887fe2d
    Response : {
