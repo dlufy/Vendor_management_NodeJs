@@ -37,7 +37,8 @@ Holden.
 configured. E.g. If Elsa Ingram and Nick Holden have been added as approvers for Any
 one, it is required to get the action taken by Elsa Ingram or Nick Holden.
 
-## Approval Levels: We can add n number of levels having any type of approvals. Each level can
+## Approval Levels:
+We can add n number of levels having any type of approvals. Each level can
 be executed accordingly. For example see below how levels and approvers are added and what
 type of action can be taken
 
@@ -52,7 +53,14 @@ npm start
 
 ## APIs to manage the system 
 1. Create a new Workflow
-   ```json
+```
+   structure of API request : {
+   "data" :[
+   {"type":'name of approval technique in lowercase seperated by hyphen eg. "any-one"',"data":[list of approvers in the format of ['name in camelcase seperated by hyphen',-1,""]]},
+   ]
+   }
+   
+   eg. ```json
    POST Request : url:localhost:3444/createWorkFlow
    Body : {
    "data":[
