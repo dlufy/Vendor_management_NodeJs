@@ -18,7 +18,7 @@
   ```
 2. Get the request for a specfic Approver(eg.by Paul-Marsh)
    GET Request : url : localhost:3444/getMyApprovalRequest/Paul-Marsh
-   ```json
+   ```
    Response : [
    {
    "_id": "5f65b929fa92e21d8866dff3",
