@@ -54,7 +54,7 @@
    ```json
    GET Request : url : localhost:3444/5f65bbae411d9230f887fe2d
    Response : {
-   "\_id": "5f65bbae411d9230f887fe2d",
+   "_id": "5f65bbae411d9230f887fe2d",
    "data": [
    {
    "type": "sequential",
