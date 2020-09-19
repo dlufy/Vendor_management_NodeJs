@@ -62,38 +62,11 @@
    },
    {
    "type": "any-one",
-   "data": [
-   [
-   "Nick-Holden",
-   1,
-   ""
-   ],
-   [
-   "John",
-   -1,
-   ""
-   ]
-   ]
+   "data": [["Nick-Holden",1,""],["John",-1,""]]
    },
    {
    "type": "round-robin",
-   "data": [
-   [
-   "Paul-Marsh",
-   1,
-   ""
-   ],
-   [
-   "D-Joshi",
-   1,
-   ""
-   ],
-   [
-   "John",
-   1,
-   ""
-   ]
-   ]
+   "data": [["Paul-Marsh",1,""],["D-Joshi",1,""],["John",1,""]]
    }
    ],
    "cur_lvl": 3,
