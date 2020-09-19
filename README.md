@@ -1,7 +1,7 @@
 # Vendor Management System
 
 1. Create a new Workflow
-   ```
+   ```json
    POST Request : url:localhost:3444/createWorkFlow
    Body : {
    "data":[
