@@ -23,7 +23,8 @@ the next person in the approval workflow can take the approval actions.
 2. Reject: This action will be marked as rejected and the workflow will be terminated.
 3. Reject & Remove from workflow: This action will be marked as rejected but will be active
 so that the next person in the approval workflow can take the approval actions.
-Type of Approvals
+
+## Type of Approvals
 1. Sequential: In this type of approval, all users have to take the approval action in
 sequential order as configured. E.g. If Elsa Ingram and Nick Holden have been added
 as approvers for Sequential, it is required to first get the action taken by Elsa Ingram and
