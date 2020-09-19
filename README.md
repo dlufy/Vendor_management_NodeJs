@@ -58,18 +58,7 @@
    "data": [
    {
    "type": "sequential",
-   "data": [
-   [
-   "Elsa-Ingram",
-   1,
-   ""
-   ],
-   [
-   "Nick-Holden",
-   2,
-   ""
-   ]
-   ]
+   "data": [["Elsa-Ingram",1,""],["Nick-Holden",2,""]]
    },
    {
    "type": "any-one",
