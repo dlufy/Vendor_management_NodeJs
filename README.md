@@ -1,5 +1,11 @@
 # Vendor Management System
 
+## Getting Started
+1. must have node install on your system
+2. npm install
+3. npm start
+
+## APIs to manage the system 
 1. Create a new Workflow
    ```json
    POST Request : url:localhost:3444/createWorkFlow
